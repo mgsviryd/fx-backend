@@ -18,6 +18,12 @@ spring:
           batch_size: 20
           order_updates: true
     database: mysql
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  data:
+      rest:
+        basePath: /rest
   session:
     jdbc:
       initialize-schema: always
