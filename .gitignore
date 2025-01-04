@@ -32,5 +32,9 @@ build/
 ### VS Code ###
 .vscode/
 
-### Application ###
+### Application configuration properties ###
 .run
+
+### Docker ###
+javaruntime/
+build-app/
