@@ -33,7 +33,7 @@ build/
 .vscode/
 
 ### Application configuration properties ###
-.run
+.run/
 
 ### Docker ###
 javaruntime/
