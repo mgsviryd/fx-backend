@@ -3,27 +3,27 @@ server:
 spring:
   application:
     name: backend
-#  datasource:
-#    url: ${SPRING_DATASOURCE_URL}
-#    username: ${SPRING_DATASOURCE_USERNAME}
-#    password: ${SPRING_DATASOURCE_PASSWORD}
-#  jpa:
-#    generate-ddl: false
-#    show-sql: true
-#    hibernate:
-#      ddl-auto: create-drop
-#    properties:
-#      hibernate:
-#        format_sql: false
-#        generate_statistics: false
-#        jdbc:
-#          batch_size: 20
-#          order_updates: true
-#    database: mysql
-#  session:
-#    jdbc:
-#      initialize-schema: always
-#      table-name: SPRING_SESSION
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: false
+        generate_statistics: false
+        jdbc:
+          batch_size: 20
+          order_updates: true
+    database: mysql
+  session:
+    jdbc:
+      initialize-schema: always
+      table-name: SPRING_SESSION
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
