@@ -1,4 +1,6 @@
 server:
+  servlet:
+    context-path: /rest
   port: 8080
 spring:
   application:
@@ -27,8 +29,5 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-  data:
-    rest:
-      basePath: /rest
   thymeleaf:
     cache: false
