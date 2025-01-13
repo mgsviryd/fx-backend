@@ -5,7 +5,7 @@
 #    * change if different: platform, port
 
 #    to build:   $ docker build -t your-image-name -f Dockerfile . --platform=linux/amd64
-#    to run:     $ docker run -p 8080:8080 your-image-name
+#    to run:     $ docker run --env-file .env -p 8080:8080 your-image-name
 #    to remove:
 #        - image:            $ docker rmi <image-id>
 #        - all images:       $ docker rmi $(docker images -a -q)
