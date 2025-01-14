@@ -50,7 +50,10 @@ public class WebSecurityConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")  // Apply to all endpoints
-                        .allowedOrigins("http://localhost:8081") // Allowed origins
+                        .allowedOrigins(
+                                "http://localhost:8081",
+                                "http://localhost"
+                        ) // Allowed origins
                         .allowedMethods("GET", "POST", "PUT", "DELETE") // Allowed HTTP methods
                         .allowedHeaders("*") // Allowed request headers
                         .exposedHeaders("Authorization") // Expose specific headers
