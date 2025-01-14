@@ -4,8 +4,10 @@
 #    * make sure you set up and logged in docker
 #    * change if different: platform, port
 
-#    to build:   $ docker build -t your-image-name -f Dockerfile . --platform=linux/amd64
-#    to run:     $ docker run --env-file .env -p 8080:8080 your-image-name
+#    to build:               $ docker build -t your_image_name -f Dockerfile . --platform=linux/amd64
+
+#    to run:                 $ docker run --env-file .env --name your_container_name -p 8080:8080 your_image_name
+
 #    to remove:
 #        - image:            $ docker rmi <image-id>
 #        - all images:       $ docker rmi $(docker images -a -q)

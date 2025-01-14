@@ -38,3 +38,7 @@ build/
 ### Docker ###
 javaruntime/
 build-app/
+
+### Environment ###
+.env/
+.env
