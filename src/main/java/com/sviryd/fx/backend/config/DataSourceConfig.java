@@ -19,7 +19,7 @@ public class DataSourceConfig {
         DataSourceInitializer dataSourceInitializer = new DataSourceInitializer();
         ResourceDatabasePopulator resourceDatabasePopulator = new ResourceDatabasePopulator();
         dataSourceInitializer.setDataSource(dataSource);
-//        resourceDatabasePopulator.addScript(new ClassPathResource("/db/data/sql1.sql"));
+//        resourceDatabasePopulator.addScript(new ClassPathResource("/db/data/sql1.sql")); // load any sql before application starts
         return dataSourceInitializer;
     }
 }
