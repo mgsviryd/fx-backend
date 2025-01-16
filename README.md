@@ -54,7 +54,8 @@ SPRING_DATASOURCE_USERNAME=<your_mysql_username>
 SPRING_DATASOURCE_PASSWORD=<your_mysql_password>
 ```
 
-### Check your mysql port is open (here: 3306), project port (8080) is close
+### Check your ports
+By default, we use myslq port - 3306 (must be open), project port - 8080 (must be close).
 ```sh
 nc -zv localhost 3306
 ```
