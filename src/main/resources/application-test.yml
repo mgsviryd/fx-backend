@@ -1,0 +1,40 @@
+server:
+  servlet:
+    context-path: /rest
+  port: 8080
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:h2:mem:test_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE;MODE=MYSQL;
+    username: root
+    password: root
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: false
+        generate_statistics: false
+        jdbc:
+          batch_size: 20
+          order_updates: true
+    database: mysql
+  session:
+    jdbc:
+      initialize-schema: always
+      table-name: SPRING_SESSION
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  thymeleaf:
+    cache: false
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        trace: false
+        web-allow-others: false
