@@ -1,10 +1,29 @@
-# Spring Boot 3 + REST Api + JPA 🚀
+# fx-backend 🚀
+Spring Boot 3 + REST Api + JPA 
+
+---
+
+## Introduction
 
 This template should help get you started developing with Spring Boot 3.
 
-Use Java 17, implement REST controller, attach JPA.
+- use `Java 17`
+- create a `Spring Boot 3` project
+- implement `REST` controllers
+- attach `JPA` repositories
+- connect to `MySQL` datasource
+- containerize an application using `Docker`
+
+> ⚠️
+> It is a version for study. You can save memory space by deleting next folders from Git history:
+> - screenshot
+> - task
+> - template
+> 
+> How to do scroll [here](#git).
 
 ---
+
 
 ## Environment
 
@@ -132,30 +151,9 @@ docker rm your-container-namе
 ```shell
 docker rmi your-image-namе
 ```
----
-
-## Packages
-| Name                                                                       | Short description                                                                                                             |
-|----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [vite](https://vite.dev/guide/)                                            | quick build Node.js modules (min 10 times compared Webpack), hot-reload for development                                       |
-| [vue](https://vuejs.org/)                                                  | split html on .vue components consisting with template, script, style sections                                                |
-| [vue-router](https://router.vuejs.org/)                                    | map url to .vue components (we put it in `view` folder)                                                                       |
-| [vuex](https://vuex.vuejs.org/)                                            | save data between reload page and share it between components                                                                 |
-| [vue-i18n](https://vue-i18n.intlify.dev/)                                  | update page messages without reload page by setting lang                                                                      |
-| [jquery](https://jquery.com/)                                              | lightweight library for: HTML/DOM manipulation, CSS manipulation, HTML event methods, Effects and animations, AJAX, Utilities |
-| [axios](https://axios-rest.com/)                                           | send http requests                                                                                                            |
-| [bootstrap-vue-next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/) | write html components in a simple and readable way applying Bootstrap                                                         |
-| [fortawesome](https://fontawesome.com/)                                    | add icons on your site                                                                                                        |
-| [chart.js](https://www.chartjs.org/)                                       | chart visualization  (e.g. line chart)                                                                                        |
-| [highcharts](https://www.highcharts.com/)                                  | graphic visualization (e.g. stock chart)                                                                                      |
 
 ---
 ## Git
-> ⚠️
-> It is a version for study. You can save memory space by deleting next folders from Git history:
-> - screenshot
-> - task
-> - template
 
 ### Check git memory space
 ```shell
