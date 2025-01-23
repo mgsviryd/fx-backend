@@ -29,4 +29,8 @@ RUN ./mvnw dependency:go-offline
 
 COPY src ./src
 
+# Run tests during the build stage
+#RUN ./mvnw test
+#RUN ./mvnw test -Pskip-integration-tests
+
 CMD ["./mvnw", "spring-boot:run"]
