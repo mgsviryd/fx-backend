@@ -21,6 +21,12 @@ import static org.springframework.security.config.Customizer.withDefaults;
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
+    private final HostConfig hostConfig;
+
+    public WebSecurityConfig(HostConfig hostConfig) {
+        this.hostConfig = hostConfig;
+    }
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder(8);
@@ -55,7 +61,8 @@ public class WebSecurityConfig {
                 registry.addMapping("/**")  // Apply to all endpoints
                         .allowedOrigins(
                                 "http://localhost:8081",
-                                "http://localhost"
+                                "http://localhost",
+                                hostConfig.getPublicURL()
                         ) // Allowed origins
                         .allowedMethods("GET", "POST", "PUT", "DELETE") // Allowed HTTP methods
                         .allowedHeaders("*") // Allowed request headers

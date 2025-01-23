@@ -1,3 +1,6 @@
+host:
+  publicURL: ${HOST_PUBLIC_URL}
+
 server:
   servlet:
     context-path: /rest
