@@ -40,5 +40,6 @@ javaruntime/
 build-app/
 
 ### Environment ###
-.env/
 .env
+.env.*
+.env/
