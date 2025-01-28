@@ -40,3 +40,8 @@ spring:
 
   thymeleaf:
     cache: false
+
+messages-source:
+  basename: 'lang/messages'
+  encoding: 'UTF-8'
+  defaultLocale: 'en_US'
