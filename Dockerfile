@@ -16,9 +16,6 @@
 #    to stop:
 #        - all containers:   $ docker stop $(docker ps -a -q)
 
-#VARIANT 1: automatically, high spead, high memory usage
-#    * uncomment below to use
-
 FROM eclipse-temurin:17-jdk-focal
 WORKDIR /app
 
